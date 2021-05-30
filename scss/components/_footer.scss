@@ -1,0 +1,35 @@
+.forte-unlock-footer-section {
+  .forte-unlock-footer-image {
+    @include flex(
+      $direction: row,
+      $align: center,
+      $wrap: wrap
+    );
+    margin: 5px 0px 0px 0px;
+    padding: 10px;
+    img {
+      width: 35%;
+    }
+  }
+  .forte-unlock-footer-copyright {
+    @include flex(
+      $direction: row,
+      $align: center,
+      $justify: flex-end,
+      $wrap: wrap
+    );
+    height: 100%;
+    p {
+      @include fluid-type($min_width, $max_width, 8px, 12px);
+      color: $black;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .forte-unlock-footer-section .forte-unlock-footer-image ,
+  .forte-unlock-footer-section .forte-unlock-footer-copyright{
+    justify-content: center;
+  }
+}

@@ -1,0 +1,97 @@
+.forte-awarded-section {
+  background-color: $grey1;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 30px 40px 60px 40px;
+  position: relative;
+  .forte-awarded-top {
+    margin-bottom: 80px;
+    .forte-awarded-information {
+      @include flex($direction: column, $align: center);
+      width: 100%;
+      .forte-awarded-header {
+        @include flex($direction: row, $align: center);
+        margin-bottom: 20px;
+        width: 100%;
+        h3 {
+          color: $light-blue3;
+          font-family: "Amazon Ember Bold", Sans-serif;
+          @include fluid-type($min_width, $max_width, 15px, 25px);
+          line-height: 1.3em;
+          font-weight: 600;
+        }
+      }
+      .forte-awarded-body {
+        width: 100%;
+        &:nth-child(1) {
+          margin-bottom: 1.3em;
+        }
+
+        p {
+          color: $dark-blue;
+          @include fluid-type($min_width, $max_width, 12px, 16px);
+        }
+      }
+    }
+    .forte-awarded-image {
+      @include flex($direction: row, $align: center, $justify: flex-end);
+      height: 100%;
+      img {
+        width: 75%;
+      }
+    }
+  }
+
+  .forte-awarded-bottom {
+    .forte-awarded-counter {
+      width: 100%;
+      @include flex(
+        $direction: row,
+        $align: center,
+        $justify: flex-end,
+        $wrap: wrap
+      );
+      .forte-awarded-counter_container {
+        width: 100%;
+        padding: 20px 0px ;
+        box-shadow: 0px 0px 1px 0px #00000080;
+        position: relative;
+        @include flex(
+          $direction: column,
+          $align: center,
+          $justify: center,
+          $wrap: wrap
+        );
+        .forte-awarded-counter_content {
+          @include fluid-type($min_width, $max_width, 26px, 36px);
+          color: $white-red;
+          font-family: $Amazon, Sans-serif;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+        .forte-awarded-counter-title {
+          p {
+            @include fluid-type($min_width, $max_width, 14px, 18px);
+            color: $dark-blue;
+            font-family: $Amazon, Sans-serif;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+@media (max-width: 767px) {
+  .forte-awarded-section{
+    padding: 30px 30px 30px 30px;
+  }
+  .forte-awarded-section .forte-awarded-top .forte-awarded-image img{
+    width: 100%;
+    margin-top: 1rem;
+  }
+}

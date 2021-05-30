@@ -1,0 +1,12 @@
+.btn-forte-primary{
+    color: $white;
+    background-color: $white-red;
+    border-color: $white-red;
+    font-weight: bold;
+    font-family: $Amazon, Sans-serif;
+    &:hover , &:focus {
+        background-color: $dark-red;
+        border-color: $dark-red;
+        color: $white;
+    }
+}
