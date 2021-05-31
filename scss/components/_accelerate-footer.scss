@@ -1,0 +1,17 @@
+.accelerate-footer {
+  padding: 5px 40px 10px 40px;
+
+  .accelerate-footer-copyright {
+    text-align: center;
+    p{
+        color: $white;
+        @include fluid-type($min_width, $max_width, 9px, 10px);
+        font-weight: 400;
+    }
+  }
+}
+@media (max-width: 767px){
+    .accelerate-footer{
+        padding: 5px 0 10px 0;
+    }
+}

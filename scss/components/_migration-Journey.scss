@@ -1,0 +1,23 @@
+.accelerate-migration-journey-section {
+  padding: 50px 0px 40px 40px;
+  position: relative;
+  .accelerate-migration-journey-header {
+    margin-bottom: 1rem;
+    h2 {
+      color: $white;
+      @include fluid-type($min_width, $max_width, 23px, 24px);
+      line-height: 1.2em;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .accelerate-migration-journey-section {
+    padding: 40px 0;
+  }
+  .accelerate-migration-journey-header,
+  .accelerate-migration-journey-button {
+    text-align: center;
+  }
+}

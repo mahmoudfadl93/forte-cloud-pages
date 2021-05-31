@@ -1,0 +1,114 @@
+.accelerate-banner-section {
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 100px 40px 100px 40px;
+  .accelerate-banner-top {
+    margin-bottom: 7rem;
+  }
+  .accelerate-banner-container {
+    margin-top: 5rem;
+    @include flex($direction: column);
+    .accelerate-banner-header {
+      margin-bottom: 1rem;
+      h1 {
+        color: $white;
+        @include fluid-type($min_width, $max_width, 30px, 46px);
+        line-height: 1.2em;
+        font-weight: 600;
+      }
+    }
+    .accelerate-banner-Desc {
+      margin-bottom: 1rem;
+      p {
+        color: $white;
+        @include fluid-type($min_width, $max_width, 13px, 18px);
+        font-weight: 400;
+      }
+    }
+  }
+
+  .Consultation-container {
+    @include flex($direction: column);
+    .Consultation-header {
+      margin-bottom: 1rem;
+      h2 {
+        color: $white;
+        @include fluid-type($min_width, $max_width, 23px, 24px);
+        line-height: 1.2em;
+        font-weight: 600;
+      }
+    }
+
+    .Consultation-Desc {
+      margin-bottom: 1rem;
+      p {
+        color: $white;
+        @include fluid-type($min_width, $max_width, 13px, 17px);
+        font-weight: 400;
+      }
+    }
+    .Consultation-items {
+      margin-bottom: 2rem;
+      @include flex($direction: row, $wrap: wrap);
+      .Consultation-item {
+        flex: 1;
+        padding: 10px;
+        .Consultation-item-icon {
+          margin-bottom: 15px;
+          i {
+            color: $white;
+            background-color: $white-red;
+            padding: 0.8rem;
+            border-radius: 5px;
+          }
+        }
+
+        .Consultation-item-Desc {
+          p {
+            color: $white;
+            @include fluid-type($min_width, $max_width, 13px, 17px);
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .accelerate-banner-section {
+    padding: 100px 0 0 0;
+  }
+  .accelerate-banner-section .Consultation-container .Consultation-items {
+    flex-direction: column;
+  }
+  .accelerate-banner-top {
+    border-bottom: 1px solid $white-red;
+    .accelerate-banner-container {
+      .accelerate-banner-button {
+        display: none;
+      }
+    }
+  }
+  .accelerate-banner-section
+    .Consultation-container
+    .Consultation-items
+    .Consultation-item {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .accelerate-banner-section
+    .accelerate-banner-container
+    .accelerate-banner-header {
+    width: 70%;
+  }
+  .accelerate-banner-bottom {
+    .form-content {
+      padding: 0 5rem;
+      .form-body {
+        margin: -50px 0 0 0;
+      }
+    }
+  }
+}
