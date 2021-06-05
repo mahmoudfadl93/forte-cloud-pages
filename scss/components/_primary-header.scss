@@ -16,16 +16,16 @@
     justify-content: flex-end;
     height: 100%;
     .btn-forte-primary {
-      @include fluid-type($min_width, $max_width, 15px, 18px);
+      @include fluid-type($min_width, $max_width, 11px, 17px);
     }
   }
 }
 
 @media (max-width: 767px) {
-  .forte-header{
+  .forte-header {
     padding: 1rem 0;
   }
   .forte-header .brand-logo img {
-    width: 90%;
-}
+    width: 60%;
+  }
 }

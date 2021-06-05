@@ -8,7 +8,7 @@
     margin-bottom: 20px;
     h2 {
       color: $light-blue3;
-      @include fluid-type($min_width, $max_width, 15px, 25px);
+      @include fluid-type($min_width, $max_width, 23px, 24px);
       line-height: 1.2em;
       font-family: $Amazon, Sans-serif;
       margin-bottom: 20px;
@@ -16,13 +16,13 @@
     }
     p {
       color: $dark-blue;
-      @include fluid-type($min_width, $max_width, 12px, 22px);
+      @include fluid-type($min_width, $max_width, 16px, 18px);
       font-family: $Amazon, Sans-serif;
     }
   }
   .forte-Customers-items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     .forte-customer-item {
       .forte-customer-item_image {
         @include flex(
@@ -38,52 +38,55 @@
         }
       }
 
-      &:nth-child(2),
-      &:nth-child(3),
-      &:nth-child(15) {
-        img {
-          width: 45%;
-        }
-      }
-      &:nth-child(4),
-      &:nth-child(10) {
-        img {
-          width: 50%;
-        }
-      }
-      &:nth-child(5) {
-        img {
-          width: 57%;
-        }
-      }
-      &:nth-child(6) {
-        img {
-          width: 35%;
-        }
-      }
-      &:nth-child(8),
-      &:nth-child(9) {
-        img {
-          width: 55%;
-        }
-      }
-      &:nth-child(11),
-      &:nth-child(14) {
-        img {
-          width: 70%;
-        }
-      }
-      &:nth-child(12) {
-        img {
-          width: 63%;
-        }
-      }
+      // &:nth-child(2),
+      // &:nth-child(3),
+      // &:nth-child(15) {
+      //   img {
+      //     width: 45%;
+      //   }
+      // }
+      // &:nth-child(4),
+      // &:nth-child(10) {
+      //   img {
+      //     width: 50%;
+      //   }
+      // }
+      // &:nth-child(5) {
+      //   img {
+      //     width: 57%;
+      //   }
+      // }
+      // &:nth-child(6) {
+      //   img {
+      //     width: 35%;
+      //   }
+      // }
+      // &:nth-child(8),
+      // &:nth-child(9) {
+      //   img {
+      //     width: 55%;
+      //   }
+      // }
+      // &:nth-child(11),
+      // &:nth-child(14) {
+      //   img {
+      //     width: 70%;
+      //   }
+      // }
+      // &:nth-child(12) {
+      //   img {
+      //     width: 63%;
+      //   }
+      // }
     }
   }
 }
 
 
 @media (max-width: 767px) {
+  .forte-Customers-section{
+    padding: 1.5rem 0;
+  }
   .forte-Customers-section .forte-Customers-items{
     display: flex;
     flex-wrap: wrap;

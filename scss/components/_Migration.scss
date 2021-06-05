@@ -18,13 +18,13 @@
     background-color: $white;
     box-shadow: 0px 0px 55px 0px #00000030;
     height: 100%;
-    width: 70%;
+    width: 100%;
     margin: auto;
     .accelerate-Migration-item__header {
       margin-bottom: 1rem;
       h3 {
         color: $light-blue3;
-        @include fluid-type($min_width, $max_width, 18px, 19px);
+        @include fluid-type($min_width, $max_width, 20px, 21px);
         line-height: 1.5em;
         font-weight: 600;
         text-transform: capitalize;
@@ -33,7 +33,7 @@
 
     .accelerate-Migration-item__content {
       p {
-        @include fluid-type($min_width, $max_width, 13px, 17px);
+        @include fluid-type($min_width, $max_width, 16px, 18px);
         font-weight: 400;
       }
     }
@@ -44,7 +44,7 @@
     padding: 50px 0;
   }
 
-  .accelerate-Migration-section .col-lg-4{
-   margin-bottom: 1.5rem;
+  .accelerate-Migration-section .col-lg-4 {
+    margin-bottom: 1.5rem;
   }
 }

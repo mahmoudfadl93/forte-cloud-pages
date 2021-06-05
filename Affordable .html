@@ -13,7 +13,1136 @@
         type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="./scss/style.css">
+    <!-- <link rel="stylesheet" href="./scss/style.css"> -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+html *,
+html *::before,
+html *::after {
+  margin: 0px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "Amazon Ember Bold", sans-serif;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  overflow: auto;
+}
+
+.btn-forte-primary {
+  color: #ffffff;
+  background-color: #f05323;
+  border-color: #f05323;
+  font-weight: bold;
+  font-family: "Amazon Ember Bold", Sans-serif;
+}
+
+.btn-forte-primary:hover, .btn-forte-primary:focus {
+  background-color: #d63031;
+  border-color: #d63031;
+  color: #ffffff;
+}
+
+.accelerate-body {
+  background-image: url(https://fortecloud.com/wp-content/uploads/2021/04/web-banner.jpg);
+}
+
+.forte-header {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 11;
+  top: 0;
+}
+
+.forte-header .brand-logo {
+  text-align: left;
+}
+
+.forte-header .brand-logo img {
+  width: 23%;
+}
+
+.forte-header .header-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 100%;
+}
+
+.forte-header .header-button .btn-forte-primary {
+  font-size: 11px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-header .header-button .btn-forte-primary {
+    font-size: calc(11px + 6 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-header .header-button .btn-forte-primary {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 767px) {
+  .forte-header {
+    padding: 1rem 0;
+  }
+  .forte-header .brand-logo img {
+    width: 60%;
+  }
+}
+
+.forte-banner-section {
+  -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  padding: 100px 40px 100px 40px;
+  background-image: url(https://fortecloud.com/wp-content/uploads/2021/05/web-cover2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  margin-top: 5rem;
+}
+
+.forte-banner-section .banner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.forte-banner-section .banner-container .banner-content {
+  margin: 0px 80px 20px 0px;
+}
+
+.forte-banner-section .banner-container .banner-content h1 {
+  color: #ffffff;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.4em;
+  letter-spacing: 0px;
+  font-family: "Amazon Ember Bold", sans-serif;
+}
+
+.forte-banner-section .banner-container .banner-content h1 {
+  font-size: 27px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-banner-section .banner-container .banner-content h1 {
+    font-size: calc(27px + 1 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-banner-section .banner-container .banner-content h1 {
+    font-size: 28px;
+  }
+}
+
+.forte-banner-section .banner-container .banner-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+.forte-banner-section .banner-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.forte-banner-section .banner-image img {
+  width: 45%;
+}
+
+.forte-banner-section .banner-image-button {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .forte-banner-section .banner-container .banner-content {
+    margin: 0 0 2rem 0;
+  }
+  .forte-banner-section {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1.5rem;
+  }
+  .forte-banner-section .banner-container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .forte-banner-section .banner-container .banner-button {
+    display: none;
+  }
+  .forte-banner-section .banner-image {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .forte-banner-section .banner-image img {
+    width: 100%;
+  }
+  .forte-banner-section .banner-image-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2rem;
+  }
+  .forte-banner-section .banner-image-button .btn-forte-primary {
+    padding: 10px 20px;
+  }
+}
+
+.forte-form-section {
+  position: relative;
+  background-color: #fafbfb;
+  -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 60px 40px 60px 40px;
+}
+
+.forte-form-section .form-information-container {
+  padding: 20px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.forte-form-section .form-information-container .form-information-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.forte-form-section .form-information-container .form-information-body .form-information-header {
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.forte-form-section .form-information-container .form-information-body .form-information-header h3 {
+  color: #f05323;
+  font-weight: 600;
+  font-family: "Amazon Ember Bold", Sans-serif;
+  line-height: 1.3em;
+}
+
+.forte-form-section .form-information-container .form-information-body .form-information-header h3 {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-form-section .form-information-container .form-information-body .form-information-header h3 {
+    font-size: calc(20px + 1 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-form-section .form-information-container .form-information-body .form-information-header h3 {
+    font-size: 21px;
+  }
+}
+
+.forte-form-section .form-information-container .form-information-body .form-information-desc {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.forte-form-section .form-information-container .form-information-body .form-information-desc p {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-form-section .form-information-container .form-information-body .form-information-desc p {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-form-section .form-information-container .form-information-body .form-information-desc p {
+    font-size: 18px;
+  }
+}
+
+.forte-form-section .form-information-container .form-information-body .form-information-list-container .form-information-list {
+  padding: 0;
+}
+
+.forte-form-section .form-information-container .form-information-body .form-information-list-container .form-information-list .information-list .information-icon-list-icon i {
+  color: #f05323;
+}
+
+.forte-form-section .form-information-container .form-information-body .form-information-list-container .form-information-list .information-list .information-icon-list-icon i {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-form-section .form-information-container .form-information-body .form-information-list-container .form-information-list .information-list .information-icon-list-icon i {
+    font-size: calc(12px + 4 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-form-section .form-information-container .form-information-body .form-information-list-container .form-information-list .information-list .information-icon-list-icon i {
+    font-size: 16px;
+  }
+}
+
+.forte-form-section .form-information-container .form-information-body .form-information-list-container .form-information-list .information-icon-list-text {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-form-section .form-information-container .form-information-body .form-information-list-container .form-information-list .information-icon-list-text {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-form-section .form-information-container .form-information-body .form-information-list-container .form-information-list .information-icon-list-text {
+    font-size: 16px;
+  }
+}
+
+.forte-form-section .form-information-container .form-information-body .form-information-footer p {
+  color: #0A9080;
+  font-weight: normal;
+  line-height: 1.3em;
+}
+
+.forte-form-section .form-information-container .form-information-body .form-information-footer p {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-form-section .form-information-container .form-information-body .form-information-footer p {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-form-section .form-information-container .form-information-body .form-information-footer p {
+    font-size: 18px;
+  }
+}
+
+.form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.form-content .form-body {
+  width: 100%;
+  height: 100%;
+  background-color: #EFEFEF;
+  -webkit-box-shadow: 0px 0px 3px 0px #c7c7c7;
+          box-shadow: 0px 0px 3px 0px #c7c7c7;
+  -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s,
+ -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s,
+ -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s,
+ box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s,
+ box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  margin: 0px 20px 0px 90px;
+  padding: 5px 15px 0px 15px;
+}
+
+@media (max-width: 767px) {
+  .forte-form-section {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0 0 30px 0;
+  }
+  .form-content .form-body {
+    margin: 20px  0;
+    height: auto;
+  }
+}
+
+.forte-benefits-section {
+  padding: 40px 40px 60px 40px;
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#002d43), to(#0a9082));
+  background-image: linear-gradient(180deg, #002d43 0%, #0a9082 100%);
+  -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.forte-benefits-section .forte-benefits-container {
+  color: #ffffff;
+}
+
+.forte-benefits-section .forte-benefits-container .forte-benefits-header {
+  margin-bottom: 40px;
+}
+
+.forte-benefits-section .forte-benefits-container .forte-benefits-header h3 {
+  line-height: 1.2em;
+  font-family: "Amazon Ember Bold", Sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.forte-benefits-section .forte-benefits-container .forte-benefits-header h3 {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-benefits-section .forte-benefits-container .forte-benefits-header h3 {
+    font-size: calc(20px + 1 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-benefits-section .forte-benefits-container .forte-benefits-header h3 {
+    font-size: 21px;
+  }
+}
+
+.forte-benefits-section .forte-benefits-container .forte-benefits-body {
+  padding: 10px;
+  -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s,
+ -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s,
+ -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s,
+ box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s,
+ box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  margin: 0px 10px 0px 0px;
+}
+
+.forte-benefits-section .forte-benefits-container .forte-benefits-body .benefit-content .benefit-header-icon {
+  margin-bottom: 15px;
+}
+
+.forte-benefits-section .forte-benefits-container .forte-benefits-body .benefit-content .benefit-header-icon i {
+  color: #f05323;
+}
+
+.forte-benefits-section .forte-benefits-container .forte-benefits-body .benefit-content .benefit-header-icon i {
+  font-size: 38px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-benefits-section .forte-benefits-container .forte-benefits-body .benefit-content .benefit-header-icon i {
+    font-size: calc(38px + 10 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-benefits-section .forte-benefits-container .forte-benefits-body .benefit-content .benefit-header-icon i {
+    font-size: 48px;
+  }
+}
+
+.forte-benefits-section .forte-benefits-container .forte-benefits-body .benefit-content .benefit-content-body {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.forte-benefits-section .forte-benefits-container .forte-benefits-body .benefit-content .benefit-content-body .benefit-conten-title {
+  font-family: "Amazon Ember Bold", Sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.forte-benefits-section .forte-benefits-container .forte-benefits-body .benefit-content .benefit-content-body .benefit-conten-title {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-benefits-section .forte-benefits-container .forte-benefits-body .benefit-content .benefit-content-body .benefit-conten-title {
+    font-size: calc(18px + 2 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-benefits-section .forte-benefits-container .forte-benefits-body .benefit-content .benefit-content-body .benefit-conten-title {
+    font-size: 20px;
+  }
+}
+
+.forte-benefits-section .forte-benefits-container .forte-benefits-body .benefit-content .benefit-content-body .benefit-conten-description {
+  font-family: "Amazon Ember Bold", Sans-serif;
+}
+
+.forte-benefits-section .forte-benefits-container .forte-benefits-body .benefit-content .benefit-content-body .benefit-conten-description {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-benefits-section .forte-benefits-container .forte-benefits-body .benefit-content .benefit-content-body .benefit-conten-description {
+    font-size: calc(12px + 4 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-benefits-section .forte-benefits-container .forte-benefits-body .benefit-content .benefit-content-body .benefit-conten-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .forte-benefits-section {
+    padding: 20px 0 10px 0;
+  }
+  .forte-benefits-section .forte-benefits-container .forte-benefits-body {
+    margin: 0;
+    padding: 0;
+  }
+  .forte-benefits-section .forte-benefits-container .forte-benefits-body .col-lg-3 {
+    margin-bottom: 1.5rem;
+  }
+  .forte-benefits-section .forte-benefits-container
+.forte-benefits-body .benefit-content {
+    text-align: center;
+  }
+  .forte-benefits-section .forte-benefits-container
+.forte-benefits-body .benefit-content .benefit-content-body .benefit-conten-title {
+    width: 100%;
+  }
+  .forte-benefits-section
+.forte-benefits-container
+.forte-benefits-body
+.benefit-content
+.benefit-content-body {
+    width: 100%;
+  }
+}
+
+.forte-awarded-section {
+  background-color: #fafbfb;
+  -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 30px 40px 60px 40px;
+  position: relative;
+}
+
+.forte-awarded-section .forte-awarded-top {
+  margin-bottom: 80px;
+}
+
+.forte-awarded-section .forte-awarded-top .forte-awarded-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.forte-awarded-section .forte-awarded-top .forte-awarded-information .forte-awarded-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.forte-awarded-section .forte-awarded-top .forte-awarded-information .forte-awarded-header h3 {
+  color: #0d5153;
+  font-family: "Amazon Ember Bold", Sans-serif;
+  line-height: 1.3em;
+  font-weight: 600;
+}
+
+.forte-awarded-section .forte-awarded-top .forte-awarded-information .forte-awarded-header h3 {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-awarded-section .forte-awarded-top .forte-awarded-information .forte-awarded-header h3 {
+    font-size: calc(20px + 1 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-awarded-section .forte-awarded-top .forte-awarded-information .forte-awarded-header h3 {
+    font-size: 21px;
+  }
+}
+
+.forte-awarded-section .forte-awarded-top .forte-awarded-information .forte-awarded-body {
+  width: 100%;
+}
+
+.forte-awarded-section .forte-awarded-top .forte-awarded-information .forte-awarded-body:nth-child(1) {
+  margin-bottom: 1.3em;
+}
+
+.forte-awarded-section .forte-awarded-top .forte-awarded-information .forte-awarded-body p {
+  color: #243064;
+}
+
+.forte-awarded-section .forte-awarded-top .forte-awarded-information .forte-awarded-body p {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-awarded-section .forte-awarded-top .forte-awarded-information .forte-awarded-body p {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-awarded-section .forte-awarded-top .forte-awarded-information .forte-awarded-body p {
+    font-size: 18px;
+  }
+}
+
+.forte-awarded-section .forte-awarded-top .forte-awarded-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 100%;
+}
+
+.forte-awarded-section .forte-awarded-top .forte-awarded-image img {
+  width: 75%;
+}
+
+.forte-awarded-section .forte-awarded-bottom .forte-awarded-counter {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.forte-awarded-section .forte-awarded-bottom .forte-awarded-counter .forte-awarded-counter_container {
+  width: 100%;
+  padding: 20px 0px;
+  -webkit-box-shadow: 0px 0px 1px 0px #00000080;
+          box-shadow: 0px 0px 1px 0px #00000080;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.forte-awarded-section .forte-awarded-bottom .forte-awarded-counter .forte-awarded-counter_container .forte-awarded-counter_content {
+  color: #f05323;
+  font-family: "Amazon Ember Bold", Sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.forte-awarded-section .forte-awarded-bottom .forte-awarded-counter .forte-awarded-counter_container .forte-awarded-counter_content {
+  font-size: 26px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-awarded-section .forte-awarded-bottom .forte-awarded-counter .forte-awarded-counter_container .forte-awarded-counter_content {
+    font-size: calc(26px + 10 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-awarded-section .forte-awarded-bottom .forte-awarded-counter .forte-awarded-counter_container .forte-awarded-counter_content {
+    font-size: 36px;
+  }
+}
+
+.forte-awarded-section .forte-awarded-bottom .forte-awarded-counter .forte-awarded-counter_container .forte-awarded-counter-title p {
+  color: #243064;
+  font-family: "Amazon Ember Bold", Sans-serif;
+  font-weight: 600;
+}
+
+.forte-awarded-section .forte-awarded-bottom .forte-awarded-counter .forte-awarded-counter_container .forte-awarded-counter-title p {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-awarded-section .forte-awarded-bottom .forte-awarded-counter .forte-awarded-counter_container .forte-awarded-counter-title p {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-awarded-section .forte-awarded-bottom .forte-awarded-counter .forte-awarded-counter_container .forte-awarded-counter-title p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .forte-awarded-section {
+    padding: 30px 0 30px 0;
+  }
+  .forte-awarded-section .forte-awarded-top .forte-awarded-image img {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .forte-awarded-section .forte-awarded-bottom .forte-awarded-counter {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.forte-Customers-section {
+  background-color: #ffffff;
+  -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  padding: 60px 0px 100px 0px;
+  position: relative;
+}
+
+.forte-Customers-section .forte-Customers-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.forte-Customers-section .forte-Customers-header h2 {
+  color: #0d5153;
+  line-height: 1.2em;
+  font-family: "Amazon Ember Bold", Sans-serif;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.forte-Customers-section .forte-Customers-header h2 {
+  font-size: 23px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-Customers-section .forte-Customers-header h2 {
+    font-size: calc(23px + 1 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-Customers-section .forte-Customers-header h2 {
+    font-size: 24px;
+  }
+}
+
+.forte-Customers-section .forte-Customers-header p {
+  color: #243064;
+  font-family: "Amazon Ember Bold", Sans-serif;
+}
+
+.forte-Customers-section .forte-Customers-header p {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-Customers-section .forte-Customers-header p {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-Customers-section .forte-Customers-header p {
+    font-size: 18px;
+  }
+}
+
+.forte-Customers-section .forte-Customers-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.forte-Customers-section .forte-Customers-items .forte-customer-item .forte-customer-item_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.forte-Customers-section .forte-Customers-items .forte-customer-item .forte-customer-item_image img {
+  width: 60%;
+}
+
+@media (max-width: 767px) {
+  .forte-Customers-section {
+    padding: 1.5rem 0;
+  }
+  .forte-Customers-section .forte-Customers-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .forte-Customers-section .forte-Customers-items .forte-customer-item {
+    width: 48%;
+    margin-bottom: 1rem;
+  }
+}
+
+.forte-unlock-benefits-section {
+  position: relative;
+  background-color: transparent;
+  -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 60px 40px 60px 40px;
+  background-image: linear-gradient(160deg, #002d43 45%, #0a9082 100%);
+  opacity: 1;
+}
+
+.forte-unlock-benefits-section::before {
+  content: "";
+  background-image: url(https://fortecloud.com/wp-content/uploads/2021/05/web-cover.jpg);
+  opacity: 0.32;
+  -webkit-transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.forte-unlock-benefits-section .container {
+  position: relative;
+}
+
+.forte-unlock-benefits-section .forte-unlock-benefits-information {
+  padding: 10px;
+}
+
+.forte-unlock-benefits-section .forte-unlock-benefits-information h2 {
+  color: #ffffff;
+  line-height: 1.4em;
+  font-weight: 600;
+}
+
+.forte-unlock-benefits-section .forte-unlock-benefits-information h2 {
+  font-size: 23px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-unlock-benefits-section .forte-unlock-benefits-information h2 {
+    font-size: calc(23px + 1 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-unlock-benefits-section .forte-unlock-benefits-information h2 {
+    font-size: 24px;
+  }
+}
+
+.forte-unlock-benefits-section .forte-unlock-benefits-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.forte-unlock-benefits-section .forte-unlock-benefits-button .btn-forte-primary {
+  padding: 10px 25px;
+}
+
+.forte-unlock-benefits-section .forte-unlock-benefits-button .btn-forte-primary {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-unlock-benefits-section .forte-unlock-benefits-button .btn-forte-primary {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-unlock-benefits-section .forte-unlock-benefits-button .btn-forte-primary {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .forte-unlock-benefits-section {
+    padding: 1rem 0 1.5rem 0;
+  }
+  .forte-unlock-benefits-section .forte-unlock-benefits-button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
+.forte-unlock-footer-section .forte-unlock-footer-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 5px 0px 0px 0px;
+  padding: 10px;
+}
+
+.forte-unlock-footer-section .forte-unlock-footer-image img {
+  width: 35%;
+}
+
+.forte-unlock-footer-section .forte-unlock-footer-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+}
+
+.forte-unlock-footer-section .forte-unlock-footer-copyright p {
+  color: #000000;
+}
+
+.forte-unlock-footer-section .forte-unlock-footer-copyright p {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .forte-unlock-footer-section .forte-unlock-footer-copyright p {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 2080));
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .forte-unlock-footer-section .forte-unlock-footer-copyright p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .forte-unlock-footer-section .forte-unlock-footer-image,
+  .forte-unlock-footer-section .forte-unlock-footer-copyright {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
+    </style>
 
 </head>
 
@@ -408,141 +1537,104 @@
                     <div class="forte-Customers-items">
                         <div class="forte-customer-item">
                             <div class="forte-customer-item_image">
-                                <img width="364" height="90"
-                                    src="https://fortecloud.com/wp-content/uploads/2021/01/1580132044_898_18583_logo.png"
-                                    alt="" loading="lazy"
-                                    srcset="https://fortecloud.com/wp-content/uploads/2021/01/1580132044_898_18583_logo.png 364w, https://fortecloud.com/wp-content/uploads/2021/01/1580132044_898_18583_logo-300x74.png 300w">
+                                <img width="200" height="150" src="./images/Juhayna.png" alt="Juhayna" loading="lazy">
                             </div>
 
                         </div>
                         <div class="forte-customer-item">
                             <div class="forte-customer-item_image">
-                                <img width="194" height="102"
-                                    src="https://fortecloud.com/wp-content/uploads/2021/01/hypone-logo.png" alt=""
+                                <img width="200" height="150" src="./images/Hyperone.png" alt="Hyperone" loading="lazy">
+                            </div>
+
+                        </div>
+                        <div class="forte-customer-item">
+                            <div class="forte-customer-item_image">
+                                <img width="200" height="150" src="./images/Mevac.png" alt="Mevac" loading="lazy">
+
+                            </div>
+
+                        </div>
+                        <div class="forte-customer-item">
+                            <div class="forte-customer-item_image">
+                                <img width="200" height="150" src="./images/SABHolding.png" alt="SABHolding"
                                     loading="lazy">
                             </div>
 
                         </div>
                         <div class="forte-customer-item">
                             <div class="forte-customer-item_image">
-                                <img width="200" height="127"
-                                    src="https://fortecloud.com/wp-content/uploads/2021/01/Upload_Stockmarket_Entity_Db_StockmarketCompany_Logo_5829319f0db585341025338cf6e36634.png"
-                                    alt="" loading="lazy">
+                                <img width="200" height="150" src="./images/Mobica.png" alt="Mobica" loading="lazy">
+                            </div>
+
+                        </div>
+                        <div class="forte-customer-item">
+                            <div class="forte-customer-item_image">
+                                <img width="200" height="150" src="./images/lotas.png" alt="lotas" loading="lazy">
+                            </div>
+
+                        </div>
+                        <div class="forte-customer-item">
+                            <div class="forte-customer-item_image">
+                                <img width="200" height="150" src="./images/CanalSugar.png" alt="CanalSugar"
+                                    loading="lazy">
+                            </div>
+
+                        </div>
+                        <div class="forte-customer-item">
+                            <div class="forte-customer-item_image">
+                                <img width="200" height="150" src="./images/FlyEgypt.png" alt="FlyEgypt" loading="lazy">
 
                             </div>
 
                         </div>
                         <div class="forte-customer-item">
                             <div class="forte-customer-item_image">
-                                <img width="400" height="198"
-                                    src="https://fortecloud.com/wp-content/uploads/2021/04/SAB-Customer-References-Logo@x2.18a3d6d1fe17748d9bd022f079a5ada3ee571e3e.png"
-                                    alt="" loading="lazy"
-                                    srcset="https://fortecloud.com/wp-content/uploads/2021/04/SAB-Customer-References-Logo@x2.18a3d6d1fe17748d9bd022f079a5ada3ee571e3e.png 400w, https://fortecloud.com/wp-content/uploads/2021/04/SAB-Customer-References-Logo@x2.18a3d6d1fe17748d9bd022f079a5ada3ee571e3e-300x149.png 300w">
+                                <img width="200" height="150" src="./images/UBM.png" alt="UBM" loading="lazy">
                             </div>
 
                         </div>
                         <div class="forte-customer-item">
                             <div class="forte-customer-item_image">
-                                <img width="492" height="356"
-                                    src="https://fortecloud.com/wp-content/uploads/2021/01/mobica.png" alt=""
-                                    loading="lazy"
-                                    srcset="https://fortecloud.com/wp-content/uploads/2021/01/mobica.png 492w, https://fortecloud.com/wp-content/uploads/2021/01/mobica-300x217.png 300w">
-
+                                <img width="200" height="150" src="./images/EldoctorPharmacies.png"
+                                    alt="EldoctorPharmacies" loading="lazy">
                             </div>
 
                         </div>
                         <div class="forte-customer-item">
                             <div class="forte-customer-item_image">
-                                <img width="672" height="672"
-                                    src="https://fortecloud.com/wp-content/uploads/2021/01/14433157_1172410082818175_3087940714179891709_n.png"
-                                    alt="" loading="lazy"
-                                    srcset="https://fortecloud.com/wp-content/uploads/2021/01/14433157_1172410082818175_3087940714179891709_n.png 672w, https://fortecloud.com/wp-content/uploads/2021/01/14433157_1172410082818175_3087940714179891709_n-300x300.png 300w, https://fortecloud.com/wp-content/uploads/2021/01/14433157_1172410082818175_3087940714179891709_n-150x150.png 150w">
-
+                                <img width="200" height="150" src="./images/DeltaAromatic.png" alt="DeltaAromatic"
+                                    loading="lazy">
                             </div>
 
                         </div>
                         <div class="forte-customer-item">
                             <div class="forte-customer-item_image">
-                                <img width="1020" height="313"
-                                    src="https://fortecloud.com/wp-content/uploads/2021/01/logo-new-copy12-1024x314.png"
-                                    alt="" loading="lazy"
-                                    srcset="https://fortecloud.com/wp-content/uploads/2021/01/logo-new-copy12-1024x314.png 1024w, https://fortecloud.com/wp-content/uploads/2021/01/logo-new-copy12-300x92.png 300w, https://fortecloud.com/wp-content/uploads/2021/01/logo-new-copy12-768x236.png 768w, https://fortecloud.com/wp-content/uploads/2021/01/logo-new-copy12.png 1500w">
-
+                                <img width="200" height="150" src="./images/HassanAllam.png" alt="HassanAllam"
+                                    loading="lazy">
                             </div>
 
                         </div>
                         <div class="forte-customer-item">
                             <div class="forte-customer-item_image">
-                                <img width="300" height="211"
-                                    src="https://fortecloud.com/wp-content/uploads/2021/01/300px-FlyEgypt_New_Logo_2019.png"
-                                    alt="" loading="lazy">
-
+                                <img width="200" height="150" src="./images/NewGiza.png" alt="NewGiza" loading="lazy">
                             </div>
 
                         </div>
                         <div class="forte-customer-item">
                             <div class="forte-customer-item_image">
-                                <img width="200" height="200"
-                                    src="https://fortecloud.com/wp-content/uploads/2021/01/0-1.png" alt=""
-                                    loading="lazy"
-                                    srcset="https://fortecloud.com/wp-content/uploads/2021/01/0-1.png 200w, https://fortecloud.com/wp-content/uploads/2021/01/0-1-150x150.png 150w">
+                                <img width="200" height="150" src="./images/Almrasem.png" alt="Almrasem" loading="lazy">
                             </div>
 
                         </div>
                         <div class="forte-customer-item">
                             <div class="forte-customer-item_image">
-                                <img width="436" height="169"
-                                    src="https://fortecloud.com/wp-content/uploads/2021/01/81755042_599657447463968_1604758403517775872_n.png"
-                                    alt="" loading="lazy"
-                                    srcset="https://fortecloud.com/wp-content/uploads/2021/01/81755042_599657447463968_1604758403517775872_n.png 436w, https://fortecloud.com/wp-content/uploads/2021/01/81755042_599657447463968_1604758403517775872_n-300x116.png 300w">
+                                <img width="200" height="150" src="./images/Metra.png" alt="Almrasem" loading="lazy">
                             </div>
 
                         </div>
                         <div class="forte-customer-item">
                             <div class="forte-customer-item_image">
-                                <img width="842" height="250"
-                                    src="https://fortecloud.com/wp-content/uploads/2021/01/delta_logo.png" alt=""
-                                    loading="lazy"
-                                    srcset="https://fortecloud.com/wp-content/uploads/2021/01/delta_logo.png 842w, https://fortecloud.com/wp-content/uploads/2021/01/delta_logo-300x89.png 300w, https://fortecloud.com/wp-content/uploads/2021/01/delta_logo-768x228.png 768w">
-
-                            </div>
-
-                        </div>
-                        <div class="forte-customer-item">
-                            <div class="forte-customer-item_image">
-                                <img width="300" height="200"
-                                    src="https://fortecloud.com/wp-content/uploads/2021/05/300x200_hassan_allam_logo.d544aab702a65997119e34d9f7832364698ab4be.png"
-                                    alt="" loading="lazy">
-                            </div>
-
-                        </div>
-                        <div class="forte-customer-item">
-                            <div class="forte-customer-item_image">
-                                <img width="918" height="624"
-                                    src="https://fortecloud.com/wp-content/uploads/2021/03/newgiza.png" alt=""
-                                    loading="lazy"
-                                    srcset="https://fortecloud.com/wp-content/uploads/2021/03/newgiza.png 918w, https://fortecloud.com/wp-content/uploads/2021/03/newgiza-300x204.png 300w, https://fortecloud.com/wp-content/uploads/2021/03/newgiza-768x522.png 768w">
-
-                            </div>
-
-                        </div>
-                        <div class="forte-customer-item">
-                            <div class="forte-customer-item_image">
-                                <img width="918" height="624"
-                                    src="https://fortecloud.com/wp-content/uploads/2021/03/almrasem.png" alt=""
-                                    loading="lazy"
-                                    srcset="https://fortecloud.com/wp-content/uploads/2021/03/almrasem.png 918w, https://fortecloud.com/wp-content/uploads/2021/03/almrasem-300x204.png 300w, https://fortecloud.com/wp-content/uploads/2021/03/almrasem-768x522.png 768w">
-
-                            </div>
-
-                        </div>
-                        <div class="forte-customer-item">
-                            <div class="forte-customer-item_image">
-                                <img width="331" height="152"
-                                    src="https://fortecloud.com/wp-content/uploads/2021/03/othaef-mdyr-hsabat-bshrk-metra-computers-group-5fbf0d2fd798b.jpg"
-                                    alt="" loading="lazy"
-                                    srcset="https://fortecloud.com/wp-content/uploads/2021/03/othaef-mdyr-hsabat-bshrk-metra-computers-group-5fbf0d2fd798b.jpg 331w, https://fortecloud.com/wp-content/uploads/2021/03/othaef-mdyr-hsabat-bshrk-metra-computers-group-5fbf0d2fd798b-300x138.jpg 300w">
-
+                                <img width="200" height="150" src="./images/UCP.png" alt="UCP" loading="lazy">
                             </div>
 
                         </div>

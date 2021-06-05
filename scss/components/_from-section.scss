@@ -20,15 +20,14 @@
           font-weight: 600;
           font-family: $Amazon, Sans-serif;
           line-height: 1.3em;
-
-          @include fluid-type($min_width, $max_width, 22px, 26px);
+          @include fluid-type($min_width, $max_width, 20px, 21px);
         }
       }
       .form-information-desc {
         margin-bottom: 20px;
         width: 100%;
         p {
-          @include fluid-type($min_width, $max_width, 15px, 17px);
+          @include fluid-type($min_width, $max_width, 16px, 18px);
         }
       }
       .form-information-list-container {
@@ -44,13 +43,13 @@
             }
           }
           .information-icon-list-text {
-            @include fluid-type($min_width, $max_width, 12px, 16px);
+            @include fluid-type($min_width, $max_width, 14px, 16px);
           }
         }
       }
       .form-information-footer {
         p {
-          @include fluid-type($min_width, $max_width, 12px, 16px);
+          @include fluid-type($min_width, $max_width, 16px, 18px);
           color: $light-blue2;
           font-weight: normal;
           line-height: 1.3em;
@@ -81,7 +80,7 @@
   .forte-form-section {
     margin-top: 0px;
     margin-bottom: 0px;
-    padding: 30px 20px 30px 20px;
+    padding: 0 0 30px 0;
   }
   .form-content .form-body{
     margin: 20px  0;

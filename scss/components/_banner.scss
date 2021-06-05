@@ -14,7 +14,7 @@
       margin: 0px 80px 20px 0px;
       h1 {
         color: $white;
-        @include fluid-type($min_width, $max_width, 30px, 55px);
+        @include fluid-type($min_width, $max_width, 27px, 28px);
         font-weight: normal;
         font-style: normal;
         line-height: 1.4em;
@@ -38,8 +38,15 @@
   }
 }
 
+
 @media (max-width: 767px) {
+    .forte-banner-section .banner-container .banner-content{
+      margin: 0 0 2rem 0;
+    }
   .forte-banner-section {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1.5rem;
     .banner-container{
       align-items: flex-start;
       .banner-button {
@@ -49,14 +56,14 @@
     .banner-image {
       justify-content: flex-start;
       img {
-        width: 70%;
+        width: 100%;
       }
     }
     .banner-image-button {
-      @include flex($direction: row, $align: center, $justify: flex-start);
+      @include flex($direction: row, $align: center, $justify: center);
       margin-top: 2rem;
       .btn-forte-primary{
-        padding: 15px 30px;
+        padding: 10px 20px;
       }
     }
   
